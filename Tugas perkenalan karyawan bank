@@ -1,0 +1,68 @@
+class KaryawanBank:
+    nama = "Ratu"
+    posisi = "Teller"
+    cabang = "Tembong"
+
+    def perkenalan(self):
+        print(f"Halo, perkenalkan saya {self.nama}, karyawan baru sebagai {self.posisi} di Bank cabang {self.cabang}")
+
+    def sapa(self, nama_teman):
+        print(f"Halo {nama_teman}, saya {self.nama}. Salam kenal ya, mohon bimbingannya")
+
+# --- Hari Pertama Masuk Kerja ---
+
+# Karyawan 1 - Ratu
+karyawan1 = KaryawanBank()
+karyawan1.nama = "Ratu"
+karyawan1.posisi = "Teller"
+karyawan1.cabang = "Tembong"
+
+# Karyawan 2 - Jeni
+karyawan2 = KaryawanBank()
+karyawan2.nama = "Jeni"
+karyawan2.posisi = "Customer Service"
+karyawan2.cabang = "Tembong"
+
+# Karyawan 3 - Ii
+karyawan3 = KaryawanBank()
+karyawan3.nama = "Ii"
+karyawan3.posisi = "Admin"
+karyawan3.cabang = "Tembong"
+
+print("=== BRIEFING PAGI ===")
+karyawan1.perkenalan()
+karyawan2.perkenalan()
+karyawan3.perkenalan()
+
+print("\n=== PERCAKAPAN SESAMA KARYAWAN BARU ===")
+karyawan1.sapa("Jeni")
+karyawan1.sapa("Ratu")
+karyawan2.sapa("Ratu dan Jeni")
+
+print("\n--- Obrolan Lanjut ---")
+print(f"{karyawan2.nama} : Gimana hari pertama kalian, grogi gak?")
+print(f"{karyawan1.nama} : Grogi banget Ratu! Takut salah layanin nasabah")
+print(f"{karyawan3.nama} : Sama! Aku juga deg-degan nih hari pertama")
+print(f"{karyawan2.nama} : Tenang, kita belajar bareng ya. Semangat tim baru!")
+print(f"{karyawan3.nama} : Semangat! Nanti istirahat kita makan bareng bertiga yuk!")
+print(f"{karyawan1.nama} : Setuju, aku yang pesenin makan!")
+
+=== BRIEFING PAGI ===
+Halo, perkenalkan saya Ratu, karyawan baru sebagai Teller di Bank cabang Tembong
+Halo, perkenalkan saya Jeni, karyawan baru sebagai Customer Service di Bank cabang Tembong
+Halo, perkenalkan saya Ii, karyawan baru sebagai Admin di Bank cabang Tembong
+
+=== PERCAKAPAN SESAMA KARYAWAN BARU ===
+Halo Jeni, saya Ratu. Salam kenal ya, mohon bimbingannya!
+Halo Ratu, saya Jeni. Salam kenal ya, mohon bimbingannya!
+Halo Ratu dan Jeni, saya Ii. Salam kenal ya, mohon bimbingannya!
+
+--- Obrolan Lanjut ---
+Ratu : Gimana hari pertama kalian, grogi gak?
+Jeni : Grogi banget Ratu! Takut salah layanin nasabah
+Ii : Sama! Aku juga deg-degan nih hari pertama
+Ratu : Tenang, kita belajar bareng ya. Semangat tim baru!
+Jeni : Semangat! Nanti istirahat kita makan bareng bertiga yuk!
+Ii : Setuju, aku yang pesenin makan!
+
+** Process exited - Return Code: 0 **
